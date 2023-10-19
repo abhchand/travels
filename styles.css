@@ -44,10 +44,3 @@ a,a:visited {
   font-size: 14px;
   color: #AAA;
 }
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
