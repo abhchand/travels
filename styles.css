@@ -1,0 +1,53 @@
+body {
+  font-family: 'Verdana',sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+li {
+  list-style: none;
+}
+a,a:visited {
+  color: blue;
+}
+
+.heading {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 980px;
+  padding: 50px;
+  margin: 0 auto;
+}
+.frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin-bottom: 25px;
+}
+.photo {
+}
+.photo img {
+  border-radius: 10px;
+  height: 250px;
+  border: 1px solid #888;
+}
+.frame .date {
+  font-size: 14px;
+  color: #AAA;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
