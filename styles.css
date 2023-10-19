@@ -12,7 +12,7 @@ a,a:visited {
 
 .heading {
   margin: 0 auto;
-  width: 500px;
+  max-width: 500px;
   text-align: center;
 }
 .gallery {
