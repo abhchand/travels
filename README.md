@@ -7,13 +7,14 @@ Source for https://abhchand.me/travels
 Strip EXIF data:
 
 ```bash
-exiftool -all= -overwrite_original file.jpeg
+# See https://photo.stackexchange.com/a/119646
+exiftool -all:all= -overwrite_original -tagsfromfile @ -exif:Orientation file.jpg
 ```
 
 Crop to 3:4 aspect ratio (vertical)
 
 ```bash
-magick convert file.jpeg -gravity center -crop 3:4 file-out.jpeg
+convert file.jpeg -gravity center -auto-orient -crop 3:4 file-out.jpeg
 
 # to crop from the top, use -gravity north
 # to crop with an offset, append an offset like `3:4+0+150`, for 150px lower (y)
